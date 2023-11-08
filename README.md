@@ -1,6 +1,6 @@
 # Alumni Portal
 
-The system entitled _**PLM Alumni Portal**_, prepared and submitted by Mary Janelly S. Borbon, Christelle Joyce E. Cerezo, Marevil M. Catugas, Pauline Regina J. Obispo, and Kaye Alex M. Pascual in partial fulfillment of the requirements for the degree of Bachelor of Science in Computer Science, has been examined and is recommended for acceptance and approval for oral examination.
+The system entitled _**PLM Alumni Portal**_, prepared and submitted by Mary Janelly S. Borbon, Christelle Joyce M. Cerezo, Marevil E. Catugas, Pauline Regina J. Obispo, and Kaye Alex M. Pascual in partial fulfillment of the requirements for the degree of Bachelor of Science in Computer Science, has been examined and is recommended for acceptance and approval for oral examination.
 
 # Background and Context of the Alumni Portal
   An alumni portal represents a significant advancement in how universities manage and maintain their connections with current and former students. Traditionally, universities have relied on manual record-keeping systems to track the activities and personal information of their student body, including alumni. This process of collecting, updating, and retrieving data can be time-consuming, error-prone, and challenging, particularly as the student and alumni populations expand over time. Hence, the development of an alumni portal has become essential for building strong, lasting connections with alumni and fostering a sense of community within the university.
