@@ -50,7 +50,7 @@ create table Awards
     YReceived  date         not null,
     AGB        varchar(100) not null,
     constraint awards_ibfk_1
-        foreign key (SNum) references alumunus.Alumni (AlumID)
+        foreign key (SNum) references alumnus.Alumni (AlumID)
 );
 
 create index SNum
@@ -69,7 +69,7 @@ create table Curricular
     EffectEnd    date        not null,
     Contribution text        null,
     constraint curricular_ibfk_1
-        foreign key (SNum) references alumunus.Alumni (AlumID)
+        foreign key (SNum) references alumnus.Alumni (AlumID)
 );
 
 create index SNum
@@ -88,7 +88,7 @@ create table EducationalBackground
     GWA             float       not null,
     Honors          varchar(20) not null,
     constraint educationalbackground_ibfk_1
-        foreign key (SNum) references alumunus.Alumni (AlumID)
+        foreign key (SNum) references alumnus.Alumni (AlumID)
 );
 
 create index SNum
@@ -125,7 +125,7 @@ create table WorkBackground
     WSec             varchar(10) not null,
     Period int not null,
     constraint workbackground_ibfk_1
-        foreign key (SNum) references alumunus.Alumni (SNum)
+        foreign key (SNum) references alumnus.Alumni (SNum)
 );
 
 create index SNum
