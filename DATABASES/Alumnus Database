@@ -1,1 +1,133 @@
+create database Alumnus;
+create table Alumni
+(
+    AlumID      int          not null
+        primary key,
+    SNum        int          not null,
+    Gender      varchar(15)  not null,
+    LName       varchar(50)  not null,
+    FName       varchar(50)  not null,
+    MName       varchar(50)  null,
+    NameExt     varchar(10)  null,
+    MaidenName  varchar(50)  null,
+    Dept        varchar(50)  not null,
+    Course      varchar(100) not null,
+    BDay        date         not null,
+    Graduated   year         not null,
+    POB         varchar(50)  not null,
+    ContactNum  int          not null,
+    TelNum      int          null,
+    EmailAdd    varchar(50)  not null,
+    Linkedin    text         null,
+    Nationality varchar(50)  not null,
+    CivilStat   varchar(50)  not null,
+    Address     varchar(100) not null,
+    Country     varchar(50)  not null,
+    Province    varchar(50)  null,
+    Region      varchar(10)  null,
+    City        varchar(50)  not null,
+    PostalCode  int          not null,
+    Skills      text         null,
+    constraint ContactNum
+        unique (ContactNum),
+    constraint EmailAdd
+        unique (EmailAdd),
+    constraint SNum
+        unique (SNum),
+    constraint TelNum
+        unique (TelNum)
+);
+
+create table Awards
+(
+    AwardID    int auto_increment
+        primary key,
+    SNum       int          null,
+    Category   varchar(50)  not null,
+    AName      varchar(50)  not null,
+    Place      varchar(100) not null,
+    LevelAward varchar(50)  not null,
+    YReceived  date         not null,
+    AGB        varchar(100) not null,
+    constraint awards_ibfk_1
+        foreign key (SNum) references alumunus.Alumni (AlumID)
+);
+
+create index SNum
+    on Awards (SNum);
+
+create table Curricular
+(
+    CurricularID int auto_increment
+        primary key,
+    SNum         int         null,
+    OrgName      varchar(20) not null,
+    Type         varchar(20) not null,
+    School       varchar(50) not null,
+    Position     varchar(20) not null,
+    EffectBegin  date        not null,
+    EffectEnd    date        not null,
+    Contribution text        null,
+    constraint curricular_ibfk_1
+        foreign key (SNum) references alumunus.Alumni (AlumID)
+);
+
+create index SNum
+    on Curricular (SNum);
+
+create table EducationalBackground
+(
+    EduBackgroundID int auto_increment
+        primary key,
+    SNum            int         null,
+    School          varchar(50) not null,
+    EdAttainment    varchar(50) not null,
+    Region          varchar(50) not null,
+    Province        varchar(50) not null,
+    Municipality    varchar(50) not null,
+    GWA             float       not null,
+    Honors          varchar(20) not null,
+    constraint educationalbackground_ibfk_1
+        foreign key (SNum) references alumunus.Alumni (AlumID)
+);
+
+create index SNum
+    on EducationalBackground (SNum);
+
+create table TrainingsAndSeminars
+(
+    TrainingID int auto_increment
+        primary key,
+    SNum       int          null,
+    Title      varchar(100) not null,
+    Type       varchar(15)  not null,
+    Organizer  varchar(30)  not null,
+    Speaker    varchar(50)  not null,
+    Venue      varchar(50)  not null,
+    Date       date         not null,
+    constraint trainingsandseminars_ibfk_1
+        foreign key (SNum) references alumunus.Alumni (AlumID)
+);
+
+create index SNum
+    on TrainingsAndSeminars (SNum);
+
+create table WorkBackground
+(
+    WorkBackgroundID int auto_increment
+        primary key,
+    SNum             int         null,
+    EmStat           varchar(20) not null,
+    JTitle           varchar(50) not null,
+    ComName          varchar(50) not null,
+    ECountry         varchar(20) not null,
+    InType           varchar(50) not null,
+    WSec             varchar(10) not null,
+    Period int not null,
+    constraint workbackground_ibfk_1
+        foreign key (SNum) references alumunus.Alumni (SNum)
+);
+
+create index SNum
+    on WorkBackground (SNum);
 
