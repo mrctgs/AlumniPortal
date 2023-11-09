@@ -1,1 +1,38 @@
+create database Events;
+use Events;
+create table EventBooking
+(
+    EBookID     int auto_increment
+        primary key,
+    EventName   varchar(50) not null,
+    EOrganizer  varchar(50) not null,
+    EmailAdd    varchar(50) not null,
+    ContactNum  int         not null,
+    Graduated   year        not null,
+    Office      varchar(15) not null,
+    ELoc        varchar(50) not null,
+    EDate       date        not null,
+    Description text        not null,
+    constraint EmailAdd
+        unique (EmailAdd),
+    constraint eventbooking_ibfk_1
+        foreign key (EventName) references events.Events (EventName)
+);
+
+create index EventName
+    on EventBooking (EventName);
+
+create table Events
+(
+    EventID    int auto_increment
+        primary key,
+    EventName  varchar(50)  not null,
+    EDate      date         not null,
+    ELoc       varchar(100) not null,
+    EOrganizer varchar(50)  not null,
+    EDesc      text         not null,
+    constraint EventName
+        unique (EventName)
+);
+
 
