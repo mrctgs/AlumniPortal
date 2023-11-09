@@ -15,7 +15,7 @@ create table EventBooking
     Description text        not null,
     constraint EmailAdd
         unique (EmailAdd),
-    constraint eventbooking_ibfk_1
+    constraint consteventbooking
         foreign key (EventName) references events.Events (EventName)
 );
 
