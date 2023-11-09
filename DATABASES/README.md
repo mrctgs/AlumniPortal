@@ -1,0 +1,1 @@
+This repository contains the code and resources for managing an alumni database, events, help resources, job listings, and news updates. It includes SQL scripts for database schema changes, data seeding, and other database-related tasks. 
