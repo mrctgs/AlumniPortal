@@ -2,7 +2,7 @@ create database Alumnus;
 use Alumnus;
 create table Alumni
 (
-    AlumID      int          not null
+    AlumID      int auto_increment
         primary key,
     SNum        int          not null,
     Gender      varchar(15)  not null,
@@ -50,8 +50,8 @@ create table Awards
     LevelAward varchar(50)  not null,
     YReceived  date         not null,
     AGB        varchar(100) not null,
-    constraint awards_ibfk_1
-        foreign key (SNum) references alumnus.Alumni (AlumID)
+    constraint constawards
+        foreign key (SNum) references Alumnus.Alumni (AlumID)
 );
 
 create index SNum
@@ -69,8 +69,8 @@ create table Curricular
     EffectBegin  date        not null,
     EffectEnd    date        not null,
     Contribution text        null,
-    constraint curricular_ibfk_1
-        foreign key (SNum) references alumnus.Alumni (AlumID)
+    constraint constcurricular
+        foreign key (SNum) references Alumnus.Alumni (AlumID)
 );
 
 create index SNum
@@ -88,8 +88,8 @@ create table EducationalBackground
     Municipality    varchar(50) not null,
     GWA             float       not null,
     Honors          varchar(20) not null,
-    constraint educationalbackground_ibfk_1
-        foreign key (SNum) references alumnus.Alumni (AlumID)
+    constraint consteducationalbackground
+        foreign key (SNum) references Alumnus.Alumni (AlumID)
 );
 
 create index SNum
@@ -106,8 +106,8 @@ create table TrainingsAndSeminars
     Speaker    varchar(50)  not null,
     Venue      varchar(50)  not null,
     Date       date         not null,
-    constraint trainingsandseminars_ibfk_1
-        foreign key (SNum) references alumunus.Alumni (AlumID)
+    constraint consttrainingsandseminars
+        foreign key (SNum) references Alumnus.Alumni (AlumID)
 );
 
 create index SNum
@@ -125,10 +125,9 @@ create table WorkBackground
     InType           varchar(50) not null,
     WSec             varchar(10) not null,
     Period int not null,
-    constraint workbackground_ibfk_1
-        foreign key (SNum) references alumnus.Alumni (SNum)
+    constraint constworkbackground
+        foreign key (SNum) references Alumnus.Alumni (SNum)
 );
 
 create index SNum
     on WorkBackground (SNum);
-
