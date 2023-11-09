@@ -1,5 +1,3 @@
-create database Events;
-use Events;
 create table EventBooking
 (
     EBookID     int auto_increment
@@ -14,12 +12,10 @@ create table EventBooking
     EDate       date        not null,
     Description text        not null,
     constraint EmailAdd
-        unique (EmailAdd),
-    constraint consteventbooking
-        foreign key (EventName) references events.Events (EventName)
+        unique (EmailAdd)
 );
 
-create index EventName
+create index consteventbooking
     on EventBooking (EventName);
 
 create table Events
@@ -32,7 +28,8 @@ create table Events
     EOrganizer varchar(50)  not null,
     EDesc      text         not null,
     constraint EventName
-        unique (EventName)
+        unique (EventName),
+    constraint constevents
+        foreign key (EventName) references events.EventBooking (EventName)
 );
-
 
