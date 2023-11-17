@@ -1,5 +1,5 @@
-Create Database Help
-Use Help
+create database Help;
+use Help;
 create table Help
 (
     HelpID      int auto_increment
