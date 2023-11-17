@@ -1,1 +1,53 @@
+Create Database Help
+Use Help
+create table Help
+(
+    HelpID      int auto_increment
+        primary key,
+    SNum        int          not null,
+    EmailAdd    varchar(20)  not null,
+    Graduated   year         not null,
+    Course      varchar(100) not null,
+    RDate       date         not null,
+    RType       varchar(50)  not null,
+    Description longtext     not null,
+    Status      varchar(20)  not null,
+    constraint EmailAdd
+        unique (EmailAdd),
+    constraint help_ibfk_1
+        foreign key (SNum) references Alumnus.Alumni (SNum)
+);
+
+create index SNum
+    on Help.Help (SNum);
+
+create table RequestDocuments
+(
+    ReqDocID   int auto_increment
+        primary key,
+    SNum       int          not null,
+    LName      varchar(50)  not null,
+    FName      varchar(50)  not null,
+    MName      varchar(50)  null,
+    NameExt    varchar(10)  null,
+    Dept       varchar(50)  not null,
+    Course     varchar(100) not null,
+    Entry      year         not null,
+    Graduated  year         not null,
+    Address    varchar(100) not null,
+    ContactNum int          not null,
+    Email      varchar(20)  not null,
+    Purpose    varchar(100) not null,
+    DocsNeed   varchar(100) not null,
+    NumCop     int          not null,
+    Date       date         not null,
+    constraint requestdocuments_ibfk_1
+        foreign key (SNum) references Alumnus.Alumni (SNum)
+);
+
+create index SNum
+    on Help.RequestDocuments (SNum);
+
+
+
 
