@@ -1,1 +1,33 @@
+create table career
+(
+    JobID      int         not null
+        primary key,
+    JTitle     varchar(50) not null,
+    ComName    varchar(50) not null,
+    EmailAdd   varchar(50) not null,
+    ContactNum int         not null,
+    CPerson    varchar(50) not null,
+    Address    varchar(50) not null,
+    EmpType    varchar(20) not null,
+    CIndustry  varchar(50) not null,
+    Salary     float       not null,
+    PosDate    date        not null
+);
+
+create table partnership
+(
+    PartnerID   int         not null
+        primary key,
+    ComName     varchar(50) not null,
+    Description longtext    not null,
+    JTitle      varchar(50) not null,
+    CPerson     varchar(50) not null,
+    EmailAdd    varchar(50) not null,
+    Address     varchar(50) not null,
+    PartType    varchar(50) not null,
+    EmpType     varchar(50) not null,
+    CIndustry   varchar(50) not null,
+    StartDate   date        not null,
+    EndDate     date        null
+);
 
