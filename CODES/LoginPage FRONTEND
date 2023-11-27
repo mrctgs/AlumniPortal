@@ -9,9 +9,11 @@
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Katibeh:wght@400;700&display=swap');
   </style>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
   
 </head>
-<body class="bg-white-10 h-screen flex flex-col flex-nowrap">
+<body class="bg-white-10 h-screen flex flex-col flex-nowrap"
+>
 
 <!--HEADER-->
 <div class="flex flex-row">
@@ -29,7 +31,7 @@
 
      <!--BUTTONS-->
      <div class="flex flex-row -ml-[4rem] ">
-      <button class=" hover:bg-blue-hover hover:border-blue-hover font-inter text-center text-16 whitespace-nowrap text-white-10 my-7 px-14 bg-blue rounded border-[1px] border-blue">
+      <button class=" hover:bg-blue-hover duration-150 hover:border-blue-hover font-inter text-center text-16 whitespace-nowrap text-white-10 my-7 px-14 bg-blue rounded border-[1px] border-blue">
             LOG IN
     </button>
     </div>
@@ -100,13 +102,32 @@
               <span class="pt-[2rem] text-left text-[1.2rem]"> Password </span>  
               <span class="pt-[2rem] ml-[13rem] text-blue text-right"> Forgot Password? </span>  
             </div>
+            <!--show and hide-->
+            <div x-data="{ show: true }">
             <div class=" mr-[6rem] mt-[1rem] h-[2.5rem] bg-white rounded-[12px] text-[1rem] py-1 border border-blue" x-data="{Password: '' }">
-                <input class="font-inter text-left px-[2rem] w-full focus:outline-none" type="text" x-model="Password" placeholder="2021-12345">
+                <input class="absolute font-inter text-left px-[2rem] w-full focus:outline-none" :type="show ? 'password' : 'text'" name="password" x-model="Password" placeholder="2021-12345">
+                <button @click="show = !show" class="relative ml-[24rem]">
+                    <svg x-show="show" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                      <path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                    </svg>
+                    <svg x-show="!show" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye-closed" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M21 9c-2.4 2.667 -5.4 4 -9 4c-3.6 0 -6.6 -1.333 -9 -4" />
+                      <path d="M3 15l2.5 -3.8" />
+                      <path d="M21 14.976l-2.492 -3.776" />
+                      <path d="M9 17l.5 -4" />
+                      <path d="M15 17l-.5 -4" />
+                    </svg>
+                </button>
+            </div>
               </div>
+             
               
               <!--LOGIN Button-->
               <div class="pt-5 flex">
-                <button class=" w-[27rem] font-inter text-center text-[1.2rem] whitespace-nowrap text-white-10 py-3 my-5 px-8 bg-blue rounded-[10px] border-[1px] border-blue hover:bg-blue-hover hover:border-blue-hover">
+                <button class=" w-[27rem] font-inter text-center text-[1.2rem] whitespace-nowrap text-white-10 py-3 my-5 px-8 bg-blue rounded-[10px] border-[1px] border-blue hover:bg-blue-hover duration-150 hover:border-blue-hover">
                    Login
                </button>
                </div>
