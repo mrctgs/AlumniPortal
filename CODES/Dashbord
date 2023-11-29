@@ -182,7 +182,7 @@
               <img class="absolute w-[1.75rem] h-[1.75rem] top-[62.500rem] left-[8rem]" 
               src="Load_list_alt_light.png" 
               />
-              <div class="absolute w-[12rem] top-[62.700rem] left-[8.200rem] text-neutral-800 text-base font-normal font-['Inter']">Document Report</div>
+              <div class="absolute w-[12rem] top-[62.700rem] left-[8.200rem] text-neutral-800 text-base font-normal font-['Inter']">Document Request</div>
         </button>
 
     <!--Search Bar & Side Panel-->  
