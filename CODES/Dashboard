@@ -1,5 +1,5 @@
 
-   <!--HEADER-->
+ <!--HEADER-->
     <div class="flex flex-row bg-white border border-black w-screen">
 
     <!--PLM HEADER-->
@@ -163,7 +163,7 @@
           <img class="absolute w-[1.75rem] h-[1.75rem] top-[48.500rem] left-[8rem]" 
           src="Trophy_light.png" 
           />
-          <div class="absolute w-[12rem] top-[48.700rem] left-[9.900rem] text-neutral-800 text-base font-normal font-['Inter']">Awards and Recognition</div>
+          <div class="absolute w-[12rem] top-[48.700rem] left-[9.900rem] text-neutral-800 text-base font-normal font-['Inter']">Awards and Certification</div>
           <!--Trainings Icon-->
           <img class="absolute w-[1.75rem] h-[1.75rem] top-[50.500rem] left-[8rem]" 
           src="3d_box_light.png" 
