@@ -1,6 +1,5 @@
-
- <!--HEADER-->
-    <div class="flex flex-row bg-white border border-black w-screen">
+<!--HEADER-->
+  <div class="flex flex-row bg-white border border-black w-screen">
 
     <!--PLM HEADER-->
     <img class="h-[5.5rem] w-[5.5rem] ml-8 my-2" src="Logo only.png">
@@ -16,33 +15,33 @@
     <!--ICON BUTTONS-->
     <button class="w-screen flex flex-row">
      <img
-       class="absolute top-[2.188rem] left-[89.700rem] w-[2.813rem] h-[2.563rem]"
+       class="absolute top-[2.188rem] left-[87rem] w-[2.813rem] h-[2.563rem]"
        alt=""
        src="User_alt_fill.png"
      />
-   
-  <button>
+
+   <button>
      <img
-       class="absolute top-[2.188rem] left-[87rem] w-[2.563rem] h-[2.563rem]"
+       class="absolute top-[2.188rem] left-[84.500rem] w-[2.563rem] h-[2.563rem]"
        alt=""
        src="Bell_pin_light.png"
      />
 
      <img
-         class="absolute top-[2.188rem] left-[84rem] w-[2.813rem] h-[2.813rem]"
+         class="absolute top-[2.188rem] left-[81.800rem] w-[2.813rem] h-[2.813rem]"
          alt=""
          src="Message_light.png"
      /> 
      
 
      <img
-       class="absolute top-[2.188rem] left-[81rem] w-[2.813rem] h-[2.813rem]"
+       class="absolute top-[2.188rem] left-[79.200rem] w-[2.813rem] h-[2.813rem]"
        alt=""
        src="Group_light.png"
      />
 
      <img
-       class="absolute top-[2.188rem] left-[78.300rem] w-[2.813rem] h-[2.813rem]"
+       class="absolute top-[2.188rem] left-[76.800rem] w-[2.813rem] h-[2.813rem]"
        alt=""
        src="Home_duotone_line.png"
      />
@@ -189,6 +188,9 @@
        <!--Side Panel-->  
        <div class=" absolute w-[64rem] h-[55rem] top-[10.500rem] left-[28rem] bg-white bg-opacity-60 rounded-lg border border-slate-500"></div>
        <div class="absolute w-[60rem] h-[5.125rem] bg-blue rounded top-[12rem] left-[30rem]"></div>
+       <span class="absolute text-[32px] top-[13rem] left-[57rem] font-inter text-white-10 font-semibold">
+         Skills
+       </span>
        <div class="absolute w-[60rem] h-[6rem] top-[17.100rem] left-[30rem] bg-white  bg-opacity-60 rounded-sm  border border-slate-500"></div>
        <span class="absolute text-[24px] top-[19rem] left-[31rem] font-inter text-black-300 ">
         Good Communication Skills
@@ -200,21 +202,6 @@
         <img class="absolute top-[19rem] left-[86rem]" src="Meatballs_menu.png"/>
        </button>
 
-         <!--UPDATE&DELETE BUTTON-->
-         <button>
-            <div class=" absolute w-[7.75rem] h-[2.625rem] top-[22rem] left-[86rem] bg-white-10  border border-slate-500"></div>
-            <img class="absolute top-[22.500rem] left-[87rem]" src="Refresh_2_light.png"/>
-            <span class="absolute text-[15px] top-[22.700rem] left-[89rem] font-inter text-black-300 ">
-               Update
-              </span>
-            
-           <div class=" absolute w-[7.75rem] h-[2.625rem] top-[24.500rem] left-[86rem] bg-white-10  border border-slate-500"></div>
-           <img class="absolute top-[25rem] left-[87rem]" src="Trash_light.png"/>
-           <span class="absolute text-[15px] top-[25rem] left-[89rem] font-inter text-black-300 ">
-               Delete
-             </span>
-        </button>
-      
        <button>
         <div class="absolute w-[16rem] h-[3.813rem] bg-blue rounded top-[25rem] left-[30rem]"></div>
         <img class="absolute top-[26rem] left-[32rem]" src="Add_ring_light.png"/>
@@ -223,3 +210,105 @@
          </span>
        </button>
 
+    <!--Footer-->
+    <div class=" w-screen h-screen relative top-[56rem]">
+    <img class="w-screen h-[50rem] top-0 absolute" src="Footer.png" />
+    <div class="absolute justify-center flex flex-row items-center inline-flex">
+         <!--PLM SIDE-->
+         <div class="pt-[7rem] flex flex-col">
+          <div class="flex flex row">
+          <img class="w-[6rem] h-[6rem] ml-[5rem]" src="Logo only.png" />
+          <div class=" py-3 ml-6 flex flex-col">
+          <h1 class="text-[30px] font-katibeh mt-0 -mb-2 text-white-10">
+              PAMANTASAN NG LUNGSOD NG MAYNILA
+           </h1>
+           <h2 class="-mt-1 text-[13px] text-light font-inter text-white-10">
+              UNIVERSITY OF THE CITY OF MANILA
+           </h2>
+          </div>
+      </div>
+      <div class="ml-[5rem] py-[5rem] flex flex-col text-white-10">
+          <span class="text-[20px] text-bold font-inter ">
+              Get in Touch
+          </span>
+          <span class="pt-4 text-light text-left text-[20px]">
+              Gen. Luna corner Muralla St., Intramuros Manila,
+          </span>
+          <span class="text-light text-left text-[20px]">
+              Philippines 1002
+          </span>
+      </div>
+      </div>
+      </div>
+                     
+      <!--GOT A QUESTION?-->
+      <div class="absolute justify-center flex flex-col items-center inline-flex">
+      <div class="flex flex-row pt-[7rem] pl-[30rem] ml-[19rem] w-3/4 flex flex-col">
+          <h1 class="pb-[3rem] text-center font-inter font-bold text-white-10 text-[55px]">
+              GOT A QUESTION?
+          </h1>
+          <span class="text-center font-inter opacity-60 leading-7 text-white-10 text-[18px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+              incididunt ut labore et dolore magna aliqua.
+          </span>
+      
+              <!--Name And Student Number-->
+              <div class="mt-[2rem] flex flex-row justify-center ">
+                  <div class="mr-[2rem] h-[3rem] bg-white-10 rounded-[14px] py-2 border border-white-10" x-data="{name: '' }">
+                      <input class="font-inter text-left px-[2rem] focus:outline-none" type="text" x-model="name" placeholder="Name (LN, FN, MI.)">
+                      <span x-text="name"></span>
+                    </div>
+                    <div class="h-[3rem] bg-white-10 rounded-[14px] py-2 border border-white-10" x-data="{name: '' }">
+                      <input class="font-inter text-left px-[2rem] focus:outline-none" type="text" x-model="name" placeholder="Student Number">
+                      <span x-text="name"></span>
+                    </div> 
+                </div> 
+             </div>
+
+             <!--Email And Year-->
+             <div class="mt-[1rem] ml-[49rem] flex flex-row justify-center ">
+              <div class="mr-[2rem] h-[3rem] bg-white-10 rounded-[14px] py-2 border border-white-10" x-data="{name: '' }">
+                  <input class="font-inter text-left px-[2rem] focus:outline-none" type="text" x-model="name" placeholder="Email of Graduation">
+                  <span x-text="name"></span>
+                </div>
+                <div class="h-[3rem] bg-white-10 rounded-[14px] py-2 border border-white-10" x-data="{name: '' }">
+                  <input class="font-inter text-left px-[2rem] focus:outline-none" type="text" x-model="name" placeholder="Year of Graduation">
+                  <span x-text="name"></span>
+                </div> 
+            </div> 
+
+            <!--Course and Type of Reqeuested-->
+            <div class="mt-[1rem] ml-[51rem] flex flex-row justify-center ">
+              <div class="mr-[2rem] h-[3rem] bg-white-10 rounded-[14px] py-2 border border-white-10" x-data="{name: '' }">
+                  <input class="font-inter text-left px-[2rem] focus:outline-none" type="text" x-model="name" placeholder="Course/ Program">
+                  <span x-text="name"></span>
+                </div>
+                <div class="mr-[2rem] h-[3rem] w-[17.500rem] bg-white-10 rounded-[14px] py-2 border border-white-10" x-data="{name: '' }">
+                  <select class="font-inter text-left px-[2rem] focus:outline-none appearance-none bg-transparent text-black" x-model="name">
+                    <option value="Type of Help Requested" disabled>None</option>
+                    <option>Type of Help Requested</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                </select>
+                  <span x-text="name"></span>
+                </div> 
+            </div> 
+            </div>
+
+           <!--MESSAGE-->
+           <div class="absolute mx-[60rem] mt-[32.500rem] ml-[54rem] h-[6rem] w-[37rem] bg-white-10 rounded-[14px] py-2 border border-white-10" x-data="{name: '' }">
+           <input class="font-inter text-left px-[2rem] focus:outline-none" type="text" x-model="name" placeholder="Message">
+           </div>
+
+           <!-- LOGIN BUTTON-->
+           <div class=" absolute w-full py-20 mt-[35rem] ml-[67rem] flex justify-left">
+           <button class="font-inter text-center text-10 whitespace-nowrap text-blue py-4 my-5 px-14 bg-white-10 rounded-[1rem] border-[1px] border-blue">
+               SUBMIT
+           </button>
+           </div>
+
+           <!--CREDITS--> 
+           <div class="absolute mt-[47rem] ml-[25rem] text-[20px] text-center font-inter text-white-10">
+              © 1967 - 2024 Pamantasan ng Lungsod ng Maynila. All Rights Reserved
+           </div>
+  </div>
