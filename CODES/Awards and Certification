@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awards and Certification</title>
+    <link rel="stylesheet" href="output.css">
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Katibeh:wght@400&display=swap"
+  />
+
+</head>
+<body>
+  <!--HEADER-->
+  <div class="flex flex-row bg-white border border-black w-screen">
+
+    <!--PLM HEADER-->
+    <img class="h-[5.5rem] w-[5.5rem] ml-8 my-2" src="Logo only.png">
+    <div class = " py-3 w-4/5 ml-5 flex flex-col">
+     <h1 class="text-[35px] font-katibeh mt-3 -mb-3 text-gold">
+        PAMANTASAN NG LUNGSOD NG MAYNILA
+     </h1>
+     <h2 class="-mt-1 text-[15px] font-inter text-black-200">
+        UNIVERSITY OF THE CITY OF MANILA
+     </h2>
+     </div>  
+      
+    <!--ICON BUTTONS-->
+    <button class="w-screen flex flex-row">
+     <img
+       class="absolute top-[2.188rem] left-[87rem] w-[2.813rem] h-[2.563rem]"
+       alt=""
+       src="User_alt_fill.png"
+     />
+
+   <button>
+     <img
+       class="absolute top-[2.188rem] left-[84.500rem] w-[2.563rem] h-[2.563rem]"
+       alt=""
+       src="Bell_pin_light.png"
+     />
+
+     <img
+         class="absolute top-[2.188rem] left-[81.800rem] w-[2.813rem] h-[2.813rem]"
+         alt=""
+         src="Message_light.png"
+     /> 
+     
+
+     <img
+       class="absolute top-[2.188rem] left-[79.200rem] w-[2.813rem] h-[2.813rem]"
+       alt=""
+       src="Group_light.png"
+     />
+
+     <img
+       class="absolute top-[2.188rem] left-[76.800rem] w-[2.813rem] h-[2.813rem]"
+       alt=""
+       src="Home_duotone_line.png"
+     />
+    </button>
+    </div>
+   
+  
+     <!--NAVBAR-->
+    <div class="bg-blue h-1/5 w-screen">
+      <navbar class="text-white-30 text-paragraph3 py-2 place-content-evenly font-inter w-screen flex flex-row">
+          <div>
+              APPLY FOR PARTNERSHIP
+          </div>
+          <div>
+              NEWS AND UPDATE
+          </div>
+          <div>
+              SERVICES
+              <button>
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.5 6.75L9 11.25L4.5 6.75" stroke="white"/>
+                      </svg>            
+              </button>
+          </div>
+          <div>
+              CAREERS
+              <button>
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.5 6.75L9 11.25L4.5 6.75" stroke="white"/>
+                      </svg>            
+              </button>
+          </div>    
+          <div>
+              ALUMNI EVENTS
+              <button>
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.5 6.75L9 11.25L4.5 6.75" stroke="white"/>
+                      </svg>            
+              </button>
+          </div>    
+      </navbar>
+    </div>
+
+    <!--Index Bar-->
+    <div class="absolute w-[21rem] h-[5rem] bg-blue rounded top-[10.625rem] left-[4.125rem]"></div>
+    <div class="absolute w-[21rem] h-[51.688rem] bg-white shadow-2xl top-[13.625rem] left-[4.125rem]"></div>
+    <img class="absolute w-[4.375rem] h-[4.375rem] top-[13.500rem] left-[12.500rem] rounded-full shadow-inner border-white-2"
+    src="Profle Image.png"
+    />
+    <button>
+      <div class="absolute w-[16.5rem] h-[3.375rem] top-[20rem] left-[6.200rem] text-black text-xl font-bold font-['Inter']">
+        JUAN CUEVAS DELA CRUZ
+      </div>
+    </button>
+      <div class="absolute w-[13.25rem] h-[53px] top-[22rem] left-[8rem] text-center text-neutral-700 text-xs font-light font-['Inter']">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </div>
+    <div class="absolute horizontal-line w-[21rem] h-[0.100rem] bg-blue-pressed top-[31rem] left-[4.200rem] "> </div>
+         
+        <div class="absolute w-[13.938rem] h-[1.5rem] top-[33rem] left-[7.400rem] text-blue text-xl font-medium font-['Inter']">
+             Personal Information
+        </div>
+      <button> 
+         <img class="absolute w-15 h-18 top-[33.500rem] left-[18.400rem]"
+          src="Vector 9.png"
+         />
+         <!--User Icon-->
+         <img class="absolute w-[1.75rem] h-[1.75rem] top-[35rem] left-[8rem]" 
+          src="User_light.png" 
+         />
+         <div class="absolute w-[6.25rem] top-[35.100rem] left-[9.800rem] text-neutral-800 text-base font-normal font-['Inter']">About Me</div>
+         </div>
+        <!--ConInfo Icon-->
+         <img class="absolute w-[1.75rem] h-[1.75rem] top-[37rem] left-[8rem]" 
+         src="Phone_light.png" 
+          />
+        <div class="absolute w-[10rem] top-[37.100rem] left-[10.200rem] text-neutral-800 text-base font-normal font-['Inter']">Contact Information</div>
+        <!--WorkExp Icon-->
+        <img class="absolute w-[1.75rem] h-[1.75rem] top-[39rem] left-[8rem]" 
+        src="Sertificate_light_light.png" 
+         />
+        <div class="absolute w-[10rem] top-[39.100rem] left-[9.400rem] text-neutral-800 text-base font-normal font-['Inter']">Work Experience</div>
+        <!--EduBackground Icon-->
+        <img class="absolute w-[1.75rem] h-[1.75rem] top-[41rem] left-[8rem]" 
+        src="Mortarboard_light.png" 
+        />
+        <div class="absolute w-[12rem] top-[41.100rem] left-[10.200rem] text-neutral-800 text-base font-normal font-['Inter']">Educational Background</div>
+        <!--EduBackground Icon-->
+        <img class="absolute w-[1.75rem] h-[1.75rem] top-[43rem] left-[8rem]" 
+        src="Chart_alt_light.png" 
+        />
+        <div class="absolute w-[12rem] top-[43.100rem] left-[5.800rem] text-neutral-800 text-base font-normal font-['Inter']">Skills</div>
+      </button>
+
+           <div class="absolute w-[13.938rem] h-[1.5rem] top-[46.500rem] left-[7rem] text-blue text-xl font-medium font-['Inter']">
+              Other Information
+           </div>
+        <button>
+           <img class="absolute w-15 h-18 top-[47rem] left-[16.400rem]"
+           src="Vector 9.png"
+           />
+           <!--Awards Icon-->
+          <img class="absolute w-[1.75rem] h-[1.75rem] top-[48.500rem] left-[8rem]" 
+          src="Trophy_light.png" 
+          />
+          <div class="absolute w-[12rem] top-[48.700rem] left-[9.900rem] text-neutral-800 text-base font-normal font-['Inter']">Awards and Certification</div>
+          <!--Trainings Icon-->
+          <img class="absolute w-[1.75rem] h-[1.75rem] top-[50.500rem] left-[8rem]" 
+          src="3d_box_light.png" 
+          />
+          <div class="absolute w-[12rem] top-[50.700rem] left-[9.700rem] text-neutral-800 text-base font-normal font-['Inter']">Trainings and Seminars</div>
+          <!--Curricular Icon-->
+          <img class="absolute w-[1.75rem] h-[1.75rem] top-[52.500rem] left-[8rem]" 
+          src="group_share_light.png" 
+          />
+          <div class="absolute w-[12rem] top-[52.700rem] left-[9.200rem] text-neutral-800 text-base font-normal font-['Inter']">Curriculars Activities</div>
+        </button>
+  
+
+              <div class="absolute w-[13.938rem] h-[1.5rem] top-[56rem] left-[7rem] text-blue text-xl font-medium font-['Inter']">
+              Online Services
+              </div>
+           <button> 
+              <img class="absolute w-15 h-18 top-[56.500rem] left-[15.400rem]"
+              src="Vector 9.png"
+               />
+              <!--Print Icon-->
+              <img class="absolute w-[1.75rem] h-[1.75rem] top-[58.500rem] left-[8rem]" 
+              src="Print_light.png" 
+              />
+              <div class="absolute w-[12rem] top-[58.700rem] left-[7.200rem] text-neutral-800 text-base font-normal font-['Inter']">Print Resume</div>
+              <!--Trans Icon-->
+              <img class="absolute w-[1.75rem] h-[1.75rem] top-[60.500rem] left-[8rem]" 
+              src="Ticket_alt_light.png" 
+              />
+              <div class="absolute w-[12rem] top-[60.700rem] left-[8.500rem] text-neutral-800 text-base font-normal font-['Inter']">Transaction History</div>
+              <!--Docu Icon-->
+              <img class="absolute w-[1.75rem] h-[1.75rem] top-[62.500rem] left-[8rem]" 
+              src="Load_list_alt_light.png" 
+              />
+              <div class="absolute w-[12rem] top-[62.700rem] left-[8.200rem] text-neutral-800 text-base font-normal font-['Inter']">Document Request</div>
+        </button>
+     
+         <!--Side Panel-->  
+         <div class=" absolute w-[64rem] h-[55rem] top-[10.500rem] left-[28rem] bg-white bg-opacity-60 rounded-lg border border-slate-500"></div>
+         <div class="absolute w-[60rem] h-[5.125rem] bg-blue rounded top-[12rem] left-[30rem]"></div>
+         <span class="absolute text-[32px] top-[13rem] left-[50rem] font-inter text-white-10 font-semibold">
+          Awards and Certification
+         </span>
+         <div class="absolute w-[60rem] h-[6rem] top-[17.100rem] left-[30rem] bg-white  bg-opacity-60 rounded-sm  border border-slate-500"></div>
+         <span class="absolute text-[24px] top-[19rem] left-[31rem] font-inter text-black-300 ">
+           Employee of the Month (May 2023)
+         </span>
+         <span class="absolute text-[15px] top-[19.500rem] left-[58.200rem] font-inter text-black-100 ">
+          ✓ Last Updated July 20, 2022
+         </span>
+         <button>
+          <img class="absolute top-[19rem] left-[86rem]" src="Meatballs_menu.png"/>
+         </button>
+  
+         <button>
+          <div class="absolute w-[16rem] h-[3.813rem] bg-blue rounded top-[25rem] left-[30rem]"></div>
+          <img class="absolute top-[26rem] left-[32rem]" src="Add_ring_light.png"/>
+          <span class="absolute text-[17px] top-[26.300rem] left-[34.500rem] font-inter text-white-30 ">
+            ADD NEW SKILLS
+           </span>
+         </button>
+  
+      <!--Footer-->
+      <div class=" w-screen h-screen relative top-[56rem]">
+      <img class="w-screen h-[50rem] top-0 absolute" src="Footer.png" />
+      <div class="absolute justify-center flex flex-row items-center inline-flex">
+           <!--PLM SIDE-->
+           <div class="pt-[7rem] flex flex-col">
+            <div class="flex flex row">
+            <img class="w-[6rem] h-[6rem] ml-[5rem]" src="Logo only.png" />
+            <div class=" py-3 ml-6 flex flex-col">
+            <h1 class="text-[30px] font-katibeh mt-0 -mb-2 text-white-10">
+                PAMANTASAN NG LUNGSOD NG MAYNILA
+             </h1>
+             <h2 class="-mt-1 text-[13px] text-light font-inter text-white-10">
+                UNIVERSITY OF THE CITY OF MANILA
+             </h2>
+            </div>
+        </div>
+        <div class="ml-[5rem] py-[5rem] flex flex-col text-white-10">
+            <span class="text-[20px] text-bold font-inter ">
+                Get in Touch
+            </span>
+            <span class="pt-4 text-light text-left text-[20px]">
+                Gen. Luna corner Muralla St., Intramuros Manila,
+            </span>
+            <span class="text-light text-left text-[20px]">
+                Philippines 1002
+            </span>
+        </div>
+        </div>
+        </div>
+                       
+        <!--GOT A QUESTION?-->
+        <div class="absolute justify-center flex flex-col items-center inline-flex">
+        <div class="flex flex-row pt-[7rem] pl-[30rem] ml-[19rem] w-3/4 flex flex-col">
+            <h1 class="pb-[3rem] text-center font-inter font-bold text-white-10 text-[55px]">
+                GOT A QUESTION?
+            </h1>
+            <span class="text-center font-inter opacity-60 leading-7 text-white-10 text-[18px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua.
+            </span>
+        
+                <!--Name And Student Number-->
+                <div class="mt-[2rem] flex flex-row justify-center ">
+                    <div class="mr-[2rem] h-[3rem] bg-white-10 rounded-[14px] py-2 border border-white-10" x-data="{name: '' }">
+                        <input class="font-inter text-left px-[2rem] focus:outline-none" type="text" x-model="name" placeholder="Name (LN, FN, MI.)">
+                        <span x-text="name"></span>
+                      </div>
+                      <div class="h-[3rem] bg-white-10 rounded-[14px] py-2 border border-white-10" x-data="{name: '' }">
+                        <input class="font-inter text-left px-[2rem] focus:outline-none" type="text" x-model="name" placeholder="Student Number">
+                        <span x-text="name"></span>
+                      </div> 
+                  </div> 
+               </div>
+  
+               <!--Email And Year-->
+               <div class="mt-[1rem] ml-[49rem] flex flex-row justify-center ">
+                <div class="mr-[2rem] h-[3rem] bg-white-10 rounded-[14px] py-2 border border-white-10" x-data="{name: '' }">
+                    <input class="font-inter text-left px-[2rem] focus:outline-none" type="text" x-model="name" placeholder="Email of Graduation">
+                    <span x-text="name"></span>
+                  </div>
+                  <div class="h-[3rem] bg-white-10 rounded-[14px] py-2 border border-white-10" x-data="{name: '' }">
+                    <input class="font-inter text-left px-[2rem] focus:outline-none" type="text" x-model="name" placeholder="Year of Graduation">
+                    <span x-text="name"></span>
+                  </div> 
+              </div> 
+  
+              <!--Course and Type of Reqeuested-->
+              <div class="mt-[1rem] ml-[51rem] flex flex-row justify-center ">
+                <div class="mr-[2rem] h-[3rem] bg-white-10 rounded-[14px] py-2 border border-white-10" x-data="{name: '' }">
+                    <input class="font-inter text-left px-[2rem] focus:outline-none" type="text" x-model="name" placeholder="Course/ Program">
+                    <span x-text="name"></span>
+                  </div>
+                  <div class="mr-[2rem] h-[3rem] w-[17.500rem] bg-white-10 rounded-[14px] py-2 border border-white-10" x-data="{name: '' }">
+                    <select class="font-inter text-left px-[2rem] focus:outline-none appearance-none bg-transparent text-black" x-model="name">
+                      <option value="Type of Help Requested" disabled>None</option>
+                      <option>Type of Help Requested</option>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                  </select>
+                    <span x-text="name"></span>
+                  </div> 
+              </div> 
+              </div>
+  
+             <!--MESSAGE-->
+             <div class="absolute mx-[60rem] mt-[32.500rem] ml-[54rem] h-[6rem] w-[37rem] bg-white-10 rounded-[14px] py-2 border border-white-10" x-data="{name: '' }">
+             <input class="font-inter text-left px-[2rem] focus:outline-none" type="text" x-model="name" placeholder="Message">
+             </div>
+  
+             <!-- LOGIN BUTTON-->
+             <div class=" absolute w-full py-20 mt-[35rem] ml-[67rem] flex justify-left">
+             <button class="font-inter text-center text-10 whitespace-nowrap text-blue py-4 my-5 px-14 bg-white-10 rounded-[1rem] border-[1px] border-blue">
+                 SUBMIT
+             </button>
+             </div>
+  
+             <!--CREDITS--> 
+             <div class="absolute mt-[47rem] ml-[25rem] text-[20px] text-center font-inter text-white-10">
+                © 1967 - 2024 Pamantasan ng Lungsod ng Maynila. All Rights Reserved
+             </div>
+    </div>
