@@ -67,7 +67,8 @@
             <span class="text-[50px] font-inter font-bold text-blue ">
                 ALUMNI EVENTS
             </span>
-
+       
+        
         <div class=" absolute mt-[1.700rem] ml-[28rem] text-black text-[18px] font-medium font-['Inter']">
             Year
         </div>
@@ -94,6 +95,7 @@
             <span x-text="name"></span>
           </div> 
         
+        
 
         <!--Event-->
         <button>  
@@ -119,8 +121,8 @@
         </button>
 
      <!--Footer-->
-  <div class="w-screen h-screen relative top-[53.500rem] right-[28rem]">
-    <img class="w-screen h-[50rem] absolute" src="Footer.png" />
+    <div class="w-screen h-screen relative top-[53.500rem] right-[28rem]">
+    <img class="w-screen h-[50rem] top-0 absolute" src="Footer.png" />
     <div class="absolute justify-center flex flex-row items-center inline-flex">
          <!--PLM SIDE-->
          <div class="pt-[7rem] flex flex-col">
@@ -160,56 +162,64 @@
               incididunt ut labore et dolore magna aliqua.
           </span>
       
-              <!--Name And Email Add-->
+              <!--Name And Student Number-->
               <div class="mt-[2rem] flex flex-row justify-center ">
                   <div class="mr-[2rem] h-[3rem] bg-white-10 rounded-[14px] py-2 border border-white-10" x-data="{name: '' }">
                       <input class="font-inter text-left px-[2rem] focus:outline-none" type="text" x-model="name" placeholder="Name (LN, FN, MI.)">
                       <span x-text="name"></span>
                     </div>
                     <div class="h-[3rem] bg-white-10 rounded-[14px] py-2 border border-white-10" x-data="{name: '' }">
-                      <input class="font-inter text-left px-[2rem] focus:outline-none" type="text" x-model="name" placeholder="Email Address">
+                      <input class="font-inter text-left px-[2rem] focus:outline-none" type="text" x-model="name" placeholder="Student Number">
                       <span x-text="name"></span>
                     </div> 
                 </div> 
              </div>
 
-             <!--Year And Course-->
+             <!--Email And Year-->
              <div class="mt-[1rem] ml-[49rem] flex flex-row justify-center ">
               <div class="mr-[2rem] h-[3rem] bg-white-10 rounded-[14px] py-2 border border-white-10" x-data="{name: '' }">
-                  <input class="font-inter text-left px-[2rem] focus:outline-none" type="text" x-model="name" placeholder="Year of Graduation">
+                  <input class="font-inter text-left px-[2rem] focus:outline-none" type="text" x-model="name" placeholder="Email of Graduation">
                   <span x-text="name"></span>
                 </div>
                 <div class="h-[3rem] bg-white-10 rounded-[14px] py-2 border border-white-10" x-data="{name: '' }">
-                  <input class="font-inter text-left px-[2rem] focus:outline-none" type="text" x-model="name" placeholder="Course/Program">
+                  <input class="font-inter text-left px-[2rem] focus:outline-none" type="text" x-model="name" placeholder="Year of Graduation">
+                  <span x-text="name"></span>
+                </div> 
+            </div> 
+
+            <!--Course and Type of Reqeuested-->
+            <div class="mt-[1rem] ml-[51rem] flex flex-row justify-center ">
+              <div class="mr-[2rem] h-[3rem] bg-white-10 rounded-[14px] py-2 border border-white-10" x-data="{name: '' }">
+                  <input class="font-inter text-left px-[2rem] focus:outline-none" type="text" x-model="name" placeholder="Course/ Program">
+                  <span x-text="name"></span>
+                </div>
+                <div class="mr-[2rem] h-[3rem] w-[17.500rem] bg-white-10 rounded-[14px] py-2 border border-white-10" x-data="{name: '' }">
+                  <select class="font-inter text-left px-[2rem] focus:outline-none appearance-none bg-transparent text-black" x-model="name">
+                    <option value="Type of Help Requested" disabled>None</option>
+                    <option>Type of Help Requested</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                </select>
                   <span x-text="name"></span>
                 </div> 
             </div> 
             </div>
 
-              <!--Name And Email Address-->
-            <div class=" absolute mx-[60rem] mt-[28.500rem] ml-[54rem] h-[3rem] w-[37rem] bg-white-10 rounded-[14px] py-2 border border-white-10" x-data="{name: '' }">
-            <select class="font-inter text-left px-[2rem] focus:outline-none appearance-none bg-transparent text-black" x-model="name">
-                <option value="Type of Help Requested" disabled>None</option>
-                <option>Type of Help Requested</option>
-                <option>Option 1</option>
-                <option>Option 2</option>
-            </select>
-            <span x-text="name"></span>
-           </div>
-
+           <!--MESSAGE-->
            <div class="absolute mx-[60rem] mt-[32.500rem] ml-[54rem] h-[6rem] w-[37rem] bg-white-10 rounded-[14px] py-2 border border-white-10" x-data="{name: '' }">
            <input class="font-inter text-left px-[2rem] focus:outline-none" type="text" x-model="name" placeholder="Message">
-          </div>
+           </div>
 
-          <!-- LOGIN BUTTON-->
-         <div class=" absolute w-full py-20 mt-[35rem] ml-[65rem] flex justify-left">
-          <button class="font-inter text-center text-10 whitespace-nowrap text-blue py-4 my-5 px-14 bg-white-10 rounded-[1rem] border-[1px] border-blue">
-             SUBMIT
-         </button>
-         </div>
+           <!-- LOGIN BUTTON-->
+           <div class=" absolute w-full py-20 mt-[35rem] ml-[67rem] flex justify-left">
+           <button class="font-inter text-center text-10 whitespace-nowrap text-blue py-4 my-5 px-14 bg-white-10 rounded-[1rem] border-[1px] border-blue">
+               SUBMIT
+           </button>
+           </div>
 
-         <!--CREDITS--> 
-          <div class="absolute mt-[47rem] ml-[25rem] text-[20px] text-center font-inter text-white-10">
+           <!--CREDITS--> 
+           <div class="absolute mt-[47rem] ml-[25rem] text-[20px] text-center font-inter text-white-10">
               © 1967 - 2024 Pamantasan ng Lungsod ng Maynila. All Rights Reserved
-          </div>
+           </div>
   </div>
+ 
