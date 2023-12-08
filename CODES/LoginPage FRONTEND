@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Alumni Portal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
   <link rel="stylesheet" href="/dist/app.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
@@ -12,8 +13,7 @@
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
   
 </head>
-<body class="bg-white-10 h-screen flex flex-col flex-nowrap"
->
+<body class="bg-white-10 h-screen flex flex-col flex-nowrap">
 
 <!--HEADER-->
 <div class="flex flex-row">
@@ -31,7 +31,7 @@
 
      <!--BUTTONS-->
      <div class="flex flex-row -ml-[4rem] ">
-      <button class=" hover:bg-blue-hover duration-150 hover:border-blue-hover font-inter text-center text-16 whitespace-nowrap text-white-10 my-7 px-14 bg-blue rounded border-[1px] border-blue">
+      <button onclick="window.location.href='/resources/views/dashboard.html'" class=" hover:bg-blue-hover duration-150 hover:border-blue-hover font-inter text-center text-16 whitespace-nowrap text-white-10 my-7 px-14 bg-blue rounded border-[1px] border-blue">
             LOG IN
     </button>
     </div>
@@ -100,13 +100,14 @@
               <!--with forgot password-->
               <div class="flex flex-row"> 
               <span class="pt-[2rem] text-left text-[1.2rem]"> Password </span>  
-              <span class="pt-[2rem] ml-[13rem] text-blue text-right"> Forgot Password? </span>  
+              <a href="javascript:void(0)" onclick="window.location.href='/resources/views/dashboard.html'" class="pt-[2rem] ml-[13rem] text-blue text-right dark:text-blue-hover hover:underline"> 
+                Forgot Password? </a>  
             </div>
             <!--show and hide-->
             <div x-data="{ show: true }">
             <div class=" mr-[6rem] mt-[1rem] h-[2.5rem] bg-white rounded-[12px] text-[1rem] py-1 border border-blue" x-data="{Password: '' }">
-                <input class="absolute font-inter text-left px-[2rem] w-full focus:outline-none" :type="show ? 'password' : 'text'" name="password" x-model="Password" placeholder="2021-12345">
-                <button @click="show = !show" class="relative ml-[24rem]">
+                <input class="absolute font-inter text-left px-[2rem] focus:outline-none" :type="show ? 'password' : 'text'" name="password" x-model="Password" placeholder="2021-12345">
+                <button class="relative pl-[23rem]" @click="show = !show">
                     <svg x-show="show" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                       <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
@@ -127,7 +128,7 @@
               
               <!--LOGIN Button-->
               <div class="pt-5 flex">
-                <button class=" w-[27rem] font-inter text-center text-[1.2rem] whitespace-nowrap text-white-10 py-3 my-5 px-8 bg-blue rounded-[10px] border-[1px] border-blue hover:bg-blue-hover duration-150 hover:border-blue-hover">
+                <button onclick="window.location.href='/resources/views/dashboard.html'" class=" w-[26rem] font-inter text-center text-[1.2rem] whitespace-nowrap text-white-10 py-3 my-5 px-8 bg-blue rounded-[10px] border-[1px] border-blue hover:bg-blue-hover duration-150 hover:border-blue-hover">
                    Login
                </button>
                </div>
@@ -136,7 +137,7 @@
 </div>
         
     <!--Footer-->
-    <div class="-mt-6 w-screen h-screen relative">
+    <div class="-mt-6 w-screen relative">
         <img class="w-screen h-[50rem] top-0 absolute" src="/img/FOOTER.png" />
         <div class="absolute justify-center flex flex-row items-center inline-flex">
             <!--PLM SIDE-->
@@ -176,12 +177,57 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                     incididunt ut labore et dolore magna aliqua.
                 </span>
+                <!--Name And Email Add-->
+            <div class="mt-[2rem] flex flex-row justify-center ">
+                <div class="mr-[2rem] h-[2.5rem] bg-white-10 rounded-[14px] py-2 border border-white-10" x-data="{Name: '' }">
+                    <input class="font-inter text-left px-[2rem] focus:outline-none" type="text" x-model="Name" placeholder="Name (LN, FN, MI.)">
+                  </div>
+                  <div class="h-[2.5rem] bg-white-10 rounded-[14px] py-2 border border-white-10" x-data="{EmailAddress: '' }">
+                    <input class="font-inter text-left px-[2rem] focus:outline-none" type="text" x-model="EmailAddress" placeholder="Email Address">
+                  </div> 
+              </div> 
+           </div>
+
+            <!--Year And Course-->
+            <div class="mt-[1rem] ml-[54rem] flex flex-row justify-center ">
+                <div class="mr-[2rem] h-[2.5rem] bg-white-10 rounded-[14px] py-2 border border-white-10" x-data="{GradYear: '' }">
+                    <input class="font-inter text-left px-[2rem] focus:outline-none" type="GradYear" x-model="Name" placeholder="Year of Graduation">
+                  </div>
+                  <div class="h-[2.5rem] bg-white-10 rounded-[14px] py-2 border border-white-10" x-data="{Course: '' }">
+                    <input class="font-inter text-left px-[2rem] focus:outline-none" type="text" x-model="Course" placeholder="Course/Program">
+                  </div> 
+              </div>
+            
+              <!--Type of Help Requested-->
+            <div class=" mt-[1rem] ml-[54rem] flex flex-row justify-start">
+                <div class="relative h-[2.5rem] px-[13rem] text-left bg-white-10 rounded-[14px] py-2 border border-blue" x-data="{color: '' }">
+                    <select class=" w-64 bg-gold font-inter px-[2rem] focus:outline-none appearance-none bg-transparent" x-model="color">
+                        <option value="" disabled>Type of Help Requested</option>
+                        <option>here</option>
+                        <option>mine</option>
+                    </select>
+                 </div>
+                 <div class="absolute ml-[39rem] mt-1"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-caret-up-down" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M18 10l-6 -6l-6 6h12" />
+                        <path d="M18 14l-6 6l-6 -6h12" />
+                    </svg>
+                 </div>
+                 </div>
+
+                 <div class="mt-[1rem] ml-[54rem] h-[6rem] w-[42rem] bg-white-10 rounded-[14px] py-2 border border-white-10 whitespace-normal overflow-ellipsis" x-data="{name: '' }">
+                    <input class="whitespace-normal w-[42rem] h-fit font-inter text-left justify-start px-[2rem] focus:outline-none" type="text" x-model="name" placeholder="Message">
+                 </div>                 
+                 
+       </div>
             </div>
+            
+
             <!--CREDITS--> 
                 <div class="pt-[29rem] text-[20px] text-center font-inter text-white-10">
                     © 1967 - 2024 Pamantasan ng Lungsod ng Maynila. All Rights Reserved
                 </div>
             </div>
-            </div>
-</div>
+    </div>
 </body>
