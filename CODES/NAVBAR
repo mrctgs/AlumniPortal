@@ -1,3 +1,9 @@
+<head>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
+  
+</head>
+
 
 <!--NAVBAR-->
 <div class="bg-blue  h-1/5 w-screen">
@@ -59,3 +65,13 @@
         </div>
     </navbar>
    </div>
+
+<script>
+    function toggleDropdown() {
+    var dropdownMenu = document.getElementById("dropdownMenu");
+    dropdownMenu.style.display = dropdownMenu.style.display === "none" ? "block" : "none";
+    }
+    function navigate(url) {
+      window.location.href = url;
+    }
+  </script>
