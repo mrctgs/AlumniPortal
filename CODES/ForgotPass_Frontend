@@ -4,13 +4,15 @@
   <meta charset="utf-8">
   <title>Alumni Portal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
   <link rel="stylesheet" href="/dist/app.css">
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Katibeh:wght@400;700&display=swap');
   </style>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
+  
+
   
 </head>
 <body class="bg-white-10 h-screen flex flex-col flex-nowrap">
@@ -31,7 +33,7 @@
 
      <!--BUTTONS-->
      <div class="flex flex-row -ml-[4rem] ">
-      <button onclick="window.location.href='/resources/views/dashboard.html'" class=" hover:bg-blue-hover duration-150 hover:border-blue-hover font-inter text-center text-16 whitespace-nowrap text-white-10 my-7 px-14 bg-blue rounded border-[1px] border-blue">
+      <button class=" hover:bg-blue-hover duration-150 hover:border-blue-hover font-inter text-center text-16 whitespace-nowrap text-white-10 my-7 px-14 bg-blue rounded border-[1px] border-blue">
             LOG IN
     </button>
     </div>
@@ -83,57 +85,37 @@
 
          <!--Intro-->
         <div class=" absolute pt-[10rem] pl-[65rem] text-center flex flex-col">
-            <div class="top-[185px] -ml-[1rem] text-blue text-[3.2rem] font-bold font-inter">
-                WELCOME BACK!</div>
-                <div class="px-6 ml-[5rem] top-[94px] text-[1.2rem] opacity-60 text-blue text-left font-inter w-3/4">
-                    To stay in touch with us, kindly sign in with your personal details below:
+            <div class="top-[185px] mr-[2rem] text-blue text-[3.2rem] font-bold font-inter">
+                Forgot Password?</div>
+                <div class="px-6 ml-[5rem] top-[94px] text-[1.2rem] opacity-60 text-blue text-left font-inter">
+                    Enter the email associated with your account.
                 </div>
                 
             <!--FORMS HERE-->
                 <!--ID Number-->
-            <div class=" px-6 ml-[5rem] text-left flex flex-col "> 
-                <span class="pt-[2rem] text-[1.2rem]"> ID Number </span>  
-            <div class=" mr-[6rem] mt-[1rem] h-[2.5rem] bg-white rounded-[12px] text-[1rem] py-1 border border-blue" x-data="{IDNumber: '' }">
-                <input class="font-inter text-left px-[2rem] w-full focus:outline-none" type="text" x-model="IDNumber" placeholder="2021-12345">
-              </div>
-
-              <!--with forgot password-->
-              <div class="flex flex-row"> 
-              <span class="pt-[2rem] text-left text-[1.2rem]"> Password </span>  
-              <a href="javascript:void(0)" onclick="window.location.href='/resources/views/dashboard.html'" class="pt-[2rem] ml-[13rem] text-blue text-right dark:text-blue-hover hover:underline"> 
-                Forgot Password? </a>  
-            </div>
-            <!--show and hide-->
-            <div x-data="{ show: true }">
-            <div class=" mr-[6rem] mt-[1rem] h-[2.5rem] bg-white rounded-[12px] text-[1rem] py-1 border border-blue" x-data="{Password: '' }">
-                <input class="absolute font-inter text-left px-[2rem] focus:outline-none" :type="show ? 'password' : 'text'" name="password" x-model="Password" placeholder="2021-12345">
-                <button class="relative pl-[23rem]" @click="show = !show">
-                    <svg x-show="show" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-                      <path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
-                    </svg>
-                    <svg x-show="!show" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye-closed" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                      <path d="M21 9c-2.4 2.667 -5.4 4 -9 4c-3.6 0 -6.6 -1.333 -9 -4" />
-                      <path d="M3 15l2.5 -3.8" />
-                      <path d="M21 14.976l-2.492 -3.776" />
-                      <path d="M9 17l.5 -4" />
-                      <path d="M15 17l-.5 -4" />
-                    </svg>
-                </button>
-            </div>
+            <div class=" px-6 ml-[4rem] text-left flex flex-col "> 
+                <span class="pt-[2rem] text-[1.2rem]"> Email </span>  
+            <div class=" mr-[6rem] mt-[1rem] h-[2.5rem] bg-white rounded-[12px] text-[1rem] py-1 border border-blue" x-data="{EmailAddress: '' }">
+                <input class=" w-[27rem] font-inter text-left px-[2rem] focus:outline-none" type="text" x-model="EmailAddress" placeholder="name@example.com">
               </div>
              
               
               <!--LOGIN Button-->
-              <div class="pt-5 flex">
-                <button onclick="window.location.href='/resources/views/dashboard.html'" class=" w-[26rem] font-inter text-center text-[1.2rem] whitespace-nowrap text-white-10 py-3 my-5 px-8 bg-blue rounded-[10px] border-[1px] border-blue hover:bg-blue-hover duration-150 hover:border-blue-hover">
-                   Login
+              <div class="pt-5 flex flex-col">
+                <button class=" w-[27rem] font-inter text-center text-[1.2rem] whitespace-nowrap text-white-10 py-3 my-5 px-8 bg-blue rounded-[10px] border-[1px] border-blue hover:bg-blue-hover duration-150 hover:border-blue-hover">
+                   Reset Password
                </button>
+               </div>  
+            <div class = "text-blue-hover opacity-60 text-[1.2rem]">
+                <span class = "ml-[5rem] font-inter">
+                    Already have an account?
+                </span>
+                <a href="#" class="font-bold font-inter dark:text-blue hover:underline ">
+                    Log in
+                </a>     
                </div>
-            </div>  
         </div>  
+        </div>
 </div>
         
     <!--Footer-->
