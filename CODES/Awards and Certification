@@ -201,22 +201,7 @@
          <button>
           <img class="absolute top-[19rem] left-[86rem]" src="Meatballs_menu.png"/>
          </button>
-
-         <!--UPDATE&DELETE BUTTON-->
-            <button>
-                <div class=" absolute w-[7.75rem] h-[2.625rem] top-[22rem] left-[86rem] bg-white-10  border border-slate-500"></div>
-                <img class="absolute top-[22.500rem] left-[87rem]" src="Refresh_2_light.png"/>
-                <span class="absolute text-[15px] top-[22.700rem] left-[89rem] font-inter text-black-300 ">
-                   Update
-                </span>
-                    
-                <div class=" absolute w-[7.75rem] h-[2.625rem] top-[24.500rem] left-[86rem] bg-white-10  border border-slate-500"></div>
-                <img class="absolute top-[25rem] left-[87rem]" src="Trash_light.png"/>
-                <span class="absolute text-[15px] top-[25rem] left-[89rem] font-inter text-black-300 ">
-                    Delete
-                </span>
-            </button>
-  
+         
          <button>
           <div class="absolute w-[13rem] h-[3.813rem] bg-blue rounded top-[25rem] left-[30rem]"></div>
           <img class="absolute top-[26rem] left-[32rem]" src="Add_ring_light.png"/>
